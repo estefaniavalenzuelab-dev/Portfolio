@@ -9,7 +9,7 @@ El sitio está desarrollado como una aplicación web estática y publicado media
 https://estefaniavalenzuelab-dev.github.io/Portfolio/
 
 ## Estructura del proyecto
-
+```text
 Portfolio/
 ├── assets/
 │   └── img/
@@ -26,7 +26,7 @@ Portfolio/
 ├── README.md
 ├── robots.txt
 └── sitemap.xml
-
+```
 ## Proyectos destacados
 
 ### HelpDesk
