@@ -1,97 +1,143 @@
-# Portfolio HelpDesk
+# Portfolio
 
-Este directorio contiene un portafolio estático completo preparado para GitHub Pages.
+Portafolio profesional desarrollado para presentar mi perfil como Full Stack JavaScript Developer, los proyectos realizados durante mi formación, las tecnologías utilizadas y mi trayectoria.
 
-La estructura es:
+El sitio está desarrollado como una aplicación web estática y publicado mediante GitHub Pages.
 
-```text
-portfolio_helpdesk_comentado/
-├── index.html
-├── cv.html
-├── 404.html
-├── projects/
-│   └── helpdesk.html
+## Portafolio en línea
+
+https://estefaniavalenzuelab-dev.github.io/Portfolio/
+
+## Estructura del proyecto
+
+Portfolio/
+├── assets/
+│   └── img/
+│       └── helpdesk.png
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── main.js
+├── projects/
+│   └── helpdesk.html
+├── 404.html
+├── cv.html
+├── index.html
+├── README.md
 ├── robots.txt
 └── sitemap.xml
-```
 
-## Responsabilidad de cada pieza
+## Proyectos destacados
 
-- `index.html`: Home del portafolio. Presenta identidad profesional, proyectos, capacidades, trayectoria y contacto.
-- `projects/helpdesk.html`: caso de estudio completo del proyecto HelpDesk.
-- `cv.html`: CV navegable e imprimible.
-- `404.html`: página de error personalizada.
-- `css/styles.css`: estilos propios que complementan Bootstrap.
-- `js/main.js`: comportamiento del navegador: tema, año del footer y navbar móvil.
-- `robots.txt`: instrucciones básicas de rastreo para crawlers y referencia al sitemap.
-- `sitemap.xml`: URLs públicas importantes que queremos facilitar a los buscadores.
+### HelpDesk
 
-## Flujo entre archivos
+Aplicación Full Stack para gestionar tickets de soporte mediante una API REST compartida por una interfaz Web y un cliente CLI.
 
-```text
-index.html
-├── css/styles.css
-├── js/main.js
-├── cv.html
-└── projects/helpdesk.html
+Incluye:
 
-projects/helpdesk.html
-├── ../css/styles.css
-├── ../js/main.js
-└── ../index.html
-```
+- CRUD y filtros de tickets.
+- Autenticación con bcrypt y JWT.
+- PostgreSQL con Sequelize.
+- Interfaz Web con Handlebars, Bootstrap y Fetch.
+- Cliente CLI que consume la misma API.
+- Archivos adjuntos.
 
-`../` significa “subir un nivel”. Como `helpdesk.html` vive dentro de `projects/`, necesita subir a la raíz antes de entrar a `css/` o `js/`.
+Tecnologías principales:
 
-## Antes de publicar
+`Node.js · Express · Sequelize · PostgreSQL · Handlebars · Bootstrap`
 
-Reemplazar los placeholders:
+El portafolio incluye además un caso de estudio dedicado a este proyecto.
 
-- `Nombre Apellido`
-- `TU_USUARIO`
-- `nombre@example.com`
-- `+56 9 1234 5678`
-- enlaces de LinkedIn y GitHub
-- URLs canonical y del sitemap según la URL real de GitHub Pages
+### Node Express Web App
 
-Si no se desea publicar teléfono, eliminarlo de la interfaz y también del JSON-LD.
+Aplicación backend desarrollada con Node.js y Express que implementa una API RESTful versionada para la gestión de usuarios y pedidos.
 
-El código está comentado con foco pedagógico. Los comentarios explican responsabilidades, decisiones de SEO, accesibilidad, Bootstrap, rutas y JavaScript del navegador.
+Incluye:
 
-## Después de desplegar HelpDesk en Railway
+- Endpoints CRUD.
+- PostgreSQL y Sequelize.
+- Relaciones entre modelos.
+- Registro y login.
+- Autenticación JWT.
+- Rutas protegidas.
+- Carga de archivos.
+- HATEOAS.
 
-Antes de publicar el portafolio en GitHub Pages, reemplazar:
+Tecnologías principales:
 
-```text
-https://TU_DOMINIO.up.railway.app/
-```
+`Node.js · Express · Sequelize · PostgreSQL · JWT · REST API`
 
-por el dominio público real de HelpDesk.
+### Alke Wallet
 
-El placeholder aparece en:
+Billetera virtual desarrollada como aplicación web para simular operaciones financieras básicas.
 
-```text
-index.html
-→ botón "Demo en vivo"
+Permite:
 
-projects/helpdesk.html
-→ JSON-LD: WebApplication.url
-→ botón principal "Demo en vivo"
-→ botón final "Probar aplicación"
-```
+- Inicio de sesión.
+- Gestión de saldo.
+- Realizar depósitos.
+- Enviar dinero.
+- Registrar y consultar movimientos.
+- Persistir información mediante localStorage.
 
-Usar la URL principal de la aplicación, no `/api/v1/health`.
+Tecnologías principales:
 
-Antes del deploy de GitHub Pages comprobar que no queden placeholders como:
+`HTML · CSS · Bootstrap · JavaScript · localStorage`
 
-```text
-TU_DOMINIO
-TU_USUARIO
-Nombre Apellido
-nombre@example.com
-```
+## Contenido del portafolio
 
+- `index.html`: página principal con perfil profesional, proyectos, tecnologías, trayectoria y contacto.
+- `projects/helpdesk.html`: caso de estudio del proyecto HelpDesk.
+- `cv.html`: CV navegable con opción de impresión o guardado como PDF.
+- `404.html`: página personalizada para URLs inexistentes.
+- `css/styles.css`: estilos propios del sitio y adaptación para impresión.
+- `js/main.js`: funcionalidades como cambio de tema y comportamiento de la interfaz.
+- `assets/img/`: imágenes utilizadas en el portafolio.
+- `robots.txt`: configuración básica para rastreadores.
+- `sitemap.xml`: URLs públicas principales del sitio.
+
+## Tecnologías
+
+### Frontend
+
+HTML · CSS · JavaScript · Bootstrap · Handlebars
+
+### Backend
+
+Node.js · Express · APIs REST · JWT
+
+### Bases de datos
+
+PostgreSQL · Sequelize · SQL
+
+### Herramientas
+
+Git · GitHub · Postman
+
+## Funcionalidades del portafolio
+
+- Diseño responsive.
+- Tema claro y oscuro.
+- Proyectos con enlaces a demos y repositorios.
+- Caso de estudio de HelpDesk.
+- CV navegable e imprimible.
+- Página 404 personalizada.
+- Metadata SEO y Open Graph.
+- Sitemap y robots.txt.
+- Enlaces profesionales y de contacto.
+
+## Despliegue
+
+El portafolio se publica mediante GitHub Pages.
+
+Las aplicaciones backend utilizadas como demostración se encuentran desplegadas de forma independiente, mientras que los proyectos frontend pueden utilizar GitHub Pages.
+
+## Autor
+
+**Estefanía Valenzuela**
+
+Full Stack JavaScript Developer
+
+- GitHub: https://github.com/estefaniavalenzuelab-dev
+- LinkedIn: https://www.linkedin.com/in/estefania-valenzuela-berrios-48209a29b
+- Portafolio: https://estefaniavalenzuelab-dev.github.io/Portfolio/

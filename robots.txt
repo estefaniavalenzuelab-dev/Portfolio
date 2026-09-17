@@ -14,4 +14,4 @@ Allow: /
 
 # Indicamos la URL pública del sitemap.
 # Reemplazar TU_USUARIO y la ruta del repositorio antes de publicar.
-Sitemap: https://TU_USUARIO.github.io/portfolio/sitemap.xml
+Sitemap: https://estefaniavalenzuelab-dev.github.io/portfolio/sitemap.xml
